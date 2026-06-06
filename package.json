@@ -2,12 +2,14 @@
   "name": "backend04",
   "version": "1.0.0",
   "description": "LEARNING HOW A PROFESSIONAL SETUP IS DONE ON A PROJECT",
+
+  "type" : "module",
+
   "keywords": [
     "backend"
   ],
   "license": "ISC",
   "author": "Shubham",
-  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
