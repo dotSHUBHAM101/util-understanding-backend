@@ -4,8 +4,19 @@ import cors from "cors"
 
 const app = express();
 
-app.use(cors({
-  origin : process.env.CORS_ORIGIN
+app.use(cors({      //middleware 
+  origin : process.env.CORS_ORIGIN,
+  credentials : true
 }))
+
+
+app.use(express.json({limit : "15kb"})) // to limit json data
+app.use(express.urlencoded({extended : true , limit : '15kb'}))
+
+app.use(express.start("public"));                            //public assets koi bhi acces kr skta ye part
+
+app.use(cookieParser()) // know what
+
+ 
 
 export default app;

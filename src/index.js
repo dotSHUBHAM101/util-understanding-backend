@@ -10,10 +10,10 @@ dotenv.config({
 const app = express();
 const PORT = process.env.PORT || 8000;
 
-// 2. Execute the database connection
+
 ConnectDB()
 .then(() => {
-    // Start the server ONLY after the database successfully connects
+    
     app.listen(PORT, () => {
         console.log(`⚙️  Server is running smoothly at port : ${PORT}`);
     });
